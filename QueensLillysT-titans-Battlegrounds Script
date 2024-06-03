@@ -1,0 +1,42 @@
+local Aqua1 = require(game:GetService("ReplicatedStorage")["Shared_Modules"].Tools["Wave 3"].Aqualad["Shared_AquaZone"])
+local Aqua2 = require(game:GetService("ReplicatedStorage")["Shared_Modules"].Tools["Wave 3"].Aqualad["Shared_OceanPush"])
+local Bumble1 = require(game:GetService("ReplicatedStorage")["Shared_Modules"].Tools["Wave 3"].Bumblebee["Shared_ElectricShots"])
+Bumble1.DEBOUNCE = 0.1
+Aqua1.DEBOUNCE = 0.25
+Aqua2.DEBOUNCE = 0.1
+Jinx2.DEBOUNCE = 0.1
+starfire.DEBOUNCE = 0.1
+cyborg.DEBOUNCE = 0.1
+robin1.DEBOUNCE = 0.1
+robin2.DEBOUNCE = 0.1
+bb.DEBOUNCE = 0.025
+gizmo.DEBOUNCE = 0.1
+approbin.PROJECTILE_SPEED = 1000
+approbin.DEBOUNCE = 0.1
+terra1.START_UP_TIME = 0
+terra1.PROJECTILE_SPEED = 700
+terra1.DEBOUNCE = 0.1
+terra2.MAX_PATHS = math.huge
+terra2.SECONDS_PER_PATH = 0
+freak.DEBOUNCE = 0.1
+freak.SPEED = 1000
+bigblackguy.DEBOUNCE = 0.1
+bigblackguy.SPEED = 350
+badcy1.DEBOUNCE = 0.1
+badcy2.DEBOUNCE = 0.1
+badcy2.ZONE_LIFETIME = math.huge
+badsf.DEBOUNCE = 0.1
+badsf.HIDDEN_TIME = 0
+tri1.MAX_NUM_HITS_PER_ATTACK = math.huge
+tri1.ACTIVE_DAMAGE_DURATION = 10
+tri1.DEBOUNCE = 0.1
+tri2.DEBOUNCE = 0.1
+tri2.PROJECTILE_SPEED = 600
+
+for i, v in pairs(game:GetService('ReplicatedStorage')['Shared_Modules'].Tools:GetDescendants()) do
+if v:IsA('ModuleScript') then
+local Module = require(v)
+Module.DEBOUNCE = 0
+Module.DAMAGE = 999999
+end
+end
